@@ -1,3 +1,55 @@
 body{
     background-color: aqua;
 }
+
+.contenedor{
+    width: 90%;
+    margin:  40px auto 100px auto;
+
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+} 
+
+.contenedor .pelicula{
+    text-align: center;
+}
+
+.contenedor .pelicula .titulo{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contenedor .pelicula .poster{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+
+}
+.paginacion{
+    /* position: ; */
+    bottom: 0;
+    /* background-color:white; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.paginacion button{
+    cursor: pointer;
+    border: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    border-radius: 2rem;
+    color: white;
+    /* font-family: ; */
+    font-weight:600;
+    transition: .3s ease all;
+}
